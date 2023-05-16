@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Saerchname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fileds"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="32dp"
+        android:hint="Name" />
+
+    <Button
+        android:id="@+id/Serch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClSearch"
+        android:text="Поиск по имени"
+
+        android:background="@drawable/fileds"/>
+
+    <Button
+        android:id="@+id/Saerchnam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fileds"
+        android:onClick="onClNamSaerch"
+        android:text="Поиск по датам"
+  />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="add"
+        android:text="Добавить"
+        android:background="@drawable/fileds"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
